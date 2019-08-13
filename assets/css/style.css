@@ -1,0 +1,243 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+.dropdownlabel
+{
+  position: relative;
+  display: inline-block;
+}
+.dropdowncontent {
+    position: absolute;
+    background: white;
+    color: black;
+    z-index: 5;
+    display: none;
+    min-width:350px;
+    width: auto;
+}
+.dropdownlabel:hover .dropdowncontent {
+  display: block;
+}
+.dropdowncontent a {
+    color: black;
+}
+.shadow{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.dropdowncontent::after
+{
+  position: absolute;
+  z-index: 4;
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-left: 15px solid transparent;  /* left arrow slant */
+	border-right: 15px solid transparent; /* right arrow slant */
+	border-bottom: 15px solid white;
+  top: -2vh;
+  left: 15px;
+}
+
+.imgbase
+{
+  /* position: relative; */
+  width: auto;
+  height: 55vh
+}
+.imgscrollhero
+{
+  background: url("../img/hero.jpg");
+  overflow: hidden;
+  width:100%;
+  height: 410px;
+  background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.nomarginbottom
+{
+  margin-bottom: 0;
+}
+.nopad
+{
+  padding: 0px !important;
+}
+.pad20
+{
+  padding: 20px;
+}
+.aboutpicture{
+  width: auto;
+  height: 372px;
+
+  background-image: repeating-linear-gradient(45deg,red 0%,red 33%,yellow 34% ,yellow 66%, green 67% ,green);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.aboutcontenttext {
+    padding: 30px;
+}
+.aboutcontent
+{
+  height: 350px;
+}
+.footer{
+  background: #0c2f40;
+  padding: 25px;
+}
+.flogo img {
+    opacity: 0.1;
+}
+.flogo{
+  text-align: center;
+}
+.flogo h3 span{
+  font-weight: 300;
+}
+.flogo h3{
+  font-weight: 100;
+  color: #ecf0f1;
+}
+.credits {
+    background: #0a242f;
+    color: #9c9c9c;
+    line-height: 3;
+    padding-left: 30px;
+}
+.footer .title .line{
+  background: #ecf0f1;
+}
+.footer .title{
+  color: #ecf0f1;
+}
+.footer ul li img {
+    filter: invert(100);
+    height: 30px;;
+}
+.social ul li{
+  display: inline-block;
+  margin: 10px;
+}
+.social{
+  text-align: center;
+}
+.footer .title div{
+  margin-bottom: 0
+}
+.acord
+{
+  background: #fff;
+}
+.plusleft {
+    position: absolute;
+    left: 130vh;
+}
+.cal{
+  min-height: 500px;
+  background: white;
+}
+
+.popper,
+.tooltip {
+  position: absolute;
+  z-index: 9999;
+  background: #FFC107;
+  color: black;
+  width: 150px;
+  border-radius: 3px;
+  box-shadow: 0 0 2px rgba(0,0,0,0.5);
+  padding: 10px;
+  text-align: center;
+}
+.style5 .tooltip {
+  background: #1E252B;
+  color: #FFFFFF;
+  max-width: 200px;
+  width: auto;
+  font-size: .8rem;
+  padding: .5em 1em;
+}
+.popper .popper__arrow,
+.tooltip .tooltip-arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  position: absolute;
+  margin: 5px;
+}
+
+.tooltip .tooltip-arrow,
+.popper .popper__arrow {
+  border-color: #FFC107;
+}
+.style5 .tooltip .tooltip-arrow {
+  border-color: #1E252B;
+}
+.popper[x-placement^="top"],
+.tooltip[x-placement^="top"] {
+  margin-bottom: 5px;
+}
+.popper[x-placement^="top"] .popper__arrow,
+.tooltip[x-placement^="top"] .tooltip-arrow {
+  border-width: 5px 5px 0 5px;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  bottom: -5px;
+  left: calc(50% - 5px);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.popper[x-placement^="bottom"],
+.tooltip[x-placement^="bottom"] {
+  margin-top: 5px;
+}
+.tooltip[x-placement^="bottom"] .tooltip-arrow,
+.popper[x-placement^="bottom"] .popper__arrow {
+  border-width: 0 5px 5px 5px;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  top: -5px;
+  left: calc(50% - 5px);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.tooltip[x-placement^="right"],
+.popper[x-placement^="right"] {
+  margin-left: 5px;
+}
+.popper[x-placement^="right"] .popper__arrow,
+.tooltip[x-placement^="right"] .tooltip-arrow {
+  border-width: 5px 5px 5px 0;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  left: -5px;
+  top: calc(50% - 5px);
+  margin-left: 0;
+  margin-right: 0;
+}
+.popper[x-placement^="left"],
+.tooltip[x-placement^="left"] {
+  margin-right: 5px;
+}
+.caladd{
+  background: white;
+}
+.popper[x-placement^="left"] .popper__arrow,
+.tooltip[x-placement^="left"] .tooltip-arrow {
+  border-width: 5px 0 5px 5px;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  right: -5px;
+  top: calc(50% - 5px);
+  margin-left: 0;
+  margin-right: 0;
+}

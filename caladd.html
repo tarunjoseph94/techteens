@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <%include head.html%>
+  <body>
+    <%include nav.html %>
+    <div class="wrapper">
+      <div class="container-fluid">
+        <section class="hero">
+          <div class="row nomarginbottom">
+            <div class="col s12 nopad">
+              <div class="imgbase">
+                <div class="imgscrollhero">
+                  <!-- <img src="./img/hero.jpg" /> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="calformadd">
+          <div class="row ">
+            <div class="col s12 nopad caladd">
+            <center>
+              <h4>Calender Add</h4>
+            </center>
+            <div class="col s9 offset-s3">
+              <form class="" method="post" action="caladdsubmit">
+                <div class="row">
+                  <div class="input-field col s3">
+                    <input  id="event_name" name="event_name" type="text" class="validate">
+                    <label for="event_name">Event Name</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s3">
+                    <input  id="event_description" name="event_description" type="text" class="validate">
+                    <label for="event_description">Event Description</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s3">
+                    <input  id="event_start_date" name="event_start_date" type="text" class="validate">
+                    <label for="event_start_date">Event Start Date</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s3">
+                    <input  id="event_end_date" name="event_end_date" type="text" class="validate">
+                    <label for="event_end_date">Event End Date</label>
+                  </div>
+                </div>
+                <input type="submit" class="waves-effect waves-light btn" >
+              </form>
+
+            </div>
+            </div>
+          </div>
+
+        </section>
+        <%include footer.html%>
+      </div>
+    </div>
+  </body>
+</html>
