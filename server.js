@@ -3,7 +3,8 @@ const templatesjs = require('templatesjs');
 const server=express();
 const fs=require('fs');
 var bodyParser=require('body-parser');
-const cheerio = require('cheerio')
+const cheerio = require('cheerio');
+const  port = process.env.PORT || 3000;
 server.use(bodyParser.json());
 server.use(bodyParser.urlencoded({
   extended: true
@@ -133,5 +134,4 @@ server.post('/caladdsubmit',function(req,res){
 
 });
 server.use(express.static(__dirname+'/assets'));
-server.listen(3001);
-console.log("Using 3001");
+server.listen(port, () => console.log('Listening on '+ port ));
